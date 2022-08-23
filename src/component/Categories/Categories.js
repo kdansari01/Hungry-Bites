@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import React from "react";
+import "./category.scss";
+import { Link } from "react-router-dom";
+import MealCard from "../MealCard";
 
 const Categories = () => {
   const [apiData, setApiData] = useState([]);
@@ -26,34 +29,14 @@ const Categories = () => {
           <div className="categoreisHeading justify-content-center d-flex mt-10 ">
             <h1 className="Heading mt-5 mb-5">Categories</h1>
           </div>
-          {/* <div className="categoreisBody d-flex"> */}
-            {/* <div className="categoriesBodyWrapper  col-4"> */}
-              <div className="categoreisList row">
-                {apiData.map((category) => (
-                 <div className="categoreisBody d-flex col-3 mb-4"> 
-                  <div className="categoriesBodyWrapper ">
-                    <div className="card" key={category.idCategory}>
-                      <img
-                        src={category.strCategoryThumb}
-                        className="card-img-top"
-                        alt="..."
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">{category.strCategory}</h5>
-                        {/* <p className="card-text">
-                          {category.strCategoryDescription}
-                        </p> */}
-                        {/* <a href="/" className="btn btn-primary">
-                          Dishes
-                        </a> */}
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-
-                ))}
-              {/* </div> */}
-            {/* </div> */}
+          <div className="categoreisList row">
+            {apiData.map((category) => (
+              <MealCard
+                name={category.strCategory}
+                to={`/category/${category.strCategory}`}
+                image={category.strCategoryThumb}
+              />
+            ))}
           </div>
         </div>
       </div>
