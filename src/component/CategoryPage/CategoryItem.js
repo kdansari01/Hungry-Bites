@@ -18,7 +18,7 @@ export const Category = () => {
 
   return (
     <div className="container-fluid px-3 mt-5">
-        <h2 className="text-center">{params.categoryName}</h2>
+        <h2 className="text-center text-danger mb-4">{params.categoryName}</h2>
       <div className="row">
         {filterCategory.map((mealItem) => (
           <MealCard

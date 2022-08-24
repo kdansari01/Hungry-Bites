@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 const ProductPage = () => {
   const [meal, setMeal] = useState({});
@@ -71,11 +71,21 @@ const ProductPage = () => {
           <div className="col-12 border">
             <h2 className="text-center">Instructions</h2>
             <p className="container">{meal.strInstructions}</p>
-            {/* <div className="col-lg-6 col-md-12 col-12 d-flex border mb-4">
-              <div className="col-4">
-                <ReactPlayer url={meal.strYoutube} className="col-6" />
-              </div> */}
+  
+            {/* <div className="row">
+              <div className="col-lg-12 col-md-12 col-12 d-flex border mb-4 ">
+              <div className="col-6" >
+                <ReactPlayer url={meal.strYoutube} />
+                </div>
+
+                <div className="col-6" >
+                <h2 className="">Wacth this.....</h2>
+                </div>
+
             </div>
+            </div> */}
+            </div>
+
           </div>
         </div>
     </div>
