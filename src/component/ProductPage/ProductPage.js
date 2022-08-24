@@ -17,7 +17,7 @@ const ProductPage = () => {
         const listOfIngredeint = Object.keys(meal)
           .filter((key) => key.includes("strIngredient"))
           .map((ingKey) => {
-            const [_, id] = ingKey.split("strIngredient");
+            const [, id] = ingKey.split("strIngredient");
             const key = meal[ingKey];
             if (key) {
               return {
