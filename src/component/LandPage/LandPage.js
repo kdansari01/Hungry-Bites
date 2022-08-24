@@ -32,12 +32,6 @@ const LandPage = () => {
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 4"
-              ></button>
             </div>
             <div className="carousel-inner ">
               
@@ -71,18 +65,6 @@ const LandPage = () => {
                 <img
                   src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   className="d-block w-100"
-                  alt="..."
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
-              </div>
-              <div className="carousel-item ">
-                <img
-                  src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=992&q=80"
                   alt="..."
                 />
                 <div className="carousel-caption d-none d-md-block">
