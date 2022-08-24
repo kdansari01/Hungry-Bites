@@ -12,7 +12,7 @@ const MealCard = ({ to, image, name }) => {
           <img
             src={image}
             className="card-img-top "
-            alt="meal-image"
+            alt="meal"
             loading="lazy"
           />
           <div className="card-body">

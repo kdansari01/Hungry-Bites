@@ -29,10 +29,10 @@ const ProductPage = () => {
             }
           })
           .filter(Boolean);
-        Object.assign(meal, { listOfIngredeint });
+          Object.assign(meal, { listOfIngredeint });
       }
       setMeal(meal);
-      console.log(meal);
+      // console.log(meal);
     })();
   }, [params.productId]);
 
