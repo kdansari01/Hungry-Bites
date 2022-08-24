@@ -25,6 +25,7 @@ export const Category = () => {
             name={mealItem.strMeal}
             to={`/product/${mealItem.idMeal}`}
             image={mealItem.strMealThumb}
+            key={mealItem.strMeal}
           />
         ))}
       </div>

@@ -17,7 +17,7 @@ const ProductPage = () => {
         const listOfIngredeint = Object.keys(meal)
           .filter((key) => key.includes("strIngredient"))
           .map((ingKey) => {
-            const [, id] = ingKey.split("strIngredient");
+            const [ , id] = ingKey.split("strIngredient");
             const key = meal[ingKey];
             if (key) {
               return {
@@ -27,10 +27,12 @@ const ProductPage = () => {
                 },
               };
             }
+            return false
           })
           .filter(Boolean);
           Object.assign(meal, { listOfIngredeint });
       }
+      
       setMeal(meal);
       // console.log(meal);
     })();
@@ -41,6 +43,7 @@ const ProductPage = () => {
       <div className="container-fluid ">
         <div className="row">
           <div className="col-lg-5 col-md-12 col-12 my-5 ">
+            
             <img src={meal.strMealThumb} alt="ingredient" className="col-12" />
 
             <h2 className="text-center mt-3">{meal.strMeal}</h2>
